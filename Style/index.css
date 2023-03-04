@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*:root {
+  --color--background: rgb(35, 31, 30);
+  --color--first: rgb(211, 185, 101);
+  --color--sec: rgb(239, 22, 27);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Video*/
+#myVideo {
+  right: 0;
+  bottom: 0;
+}
+/* Logga / sido bild */
+header img {
+  height: 100vh;
+}
+
+/* Vet inte vad som har hämt med meny knappen. Den har slutat fungera och det vita strecket har uppstått. Vad har jag gjort för fel? */
+
+
+#meny a {
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  font-size: 3rem;
+  font-style: italic;
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 1rem;
+  color: var(--color--first);
+  margin: 1rem;
+  text-decoration: none;
+  opacity: 100%;
+  transition-delay: 0.5s;
+}
+
+/* Rörelse */
+#meny:active {
+  scale: 90%;
+  opacity: 90%;
+}
+
+#meny a:hover {
+  background-color: var(--color--background);
+}
+
+.kontaktfrom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color--sec);
+  padding: 20px;
+  height: 90vh;
+}
+/* Target, allt som är text */
+input[type='text'],
+select,
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Anpassa storlek endast vertical */
+}
+/* Target knapp */
+input[type='submit'] {
+  background-color: var(--Main--color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  background-color: var(--Se--color);
+}
+
+p {
+  color: var(--color--first);
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.intro p {
+  font-style: italic;
+  text-align: center;
+  font-size: 5vh;
+}
+
+@media (max-width: 500px) {
+  #myVideo {
+    opacity: 0%;
+  }
+
+  #meny a {
+    left: 25%;
+    top: 75%;
+  }
+
+  header img {
+    height: 80vh;
+  }
+
+  .intro p {
+    font-size: 2vh;
+  }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*:root {
+  --color--background: rgb(35, 31, 30);
+  --color--first: rgb(211, 185, 101);
+  --color--sec: rgb(239, 22, 27);
+}
+
+h1 {
+  margin: 10px;
+  color: var(--color--first);
+  font-style: italic ;
+}
+
+.grid h2{
+  color: var(--color--background);
+  font-size: 1rem;
+}
+
+.grid{
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.box{
+width: 20rem;
+background-color: var(--color--first);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin: 10px;
+}
+
+.text{
+text-align: center;
+padding: 10px 20px;
+}

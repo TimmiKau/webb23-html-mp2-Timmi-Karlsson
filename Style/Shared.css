@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* Colors */
+*:root {
+  --color--background: rgb(35, 31, 30);
+  --color--first: rgb(211, 185, 101);
+  --color--sec: rgb(239, 22, 27);
+}
+/* Defalut padding och margin*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color--background);
+  overflow-x: hidden; 
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color--background);
+}
+
+.nav{
+position: absolute;
+right:0;
+margin-right: 1rem;
+
+}
+
+.nav button {
+  color: var(--color--first);
+  border: none;
+  background-color: var(--color--background);
+  margin: 1rem;
+}
+
+.nav a{
+  color: var(--color--first);
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(81, 78, 78);
+  cursor: pointer;
+}
+
+footer{
+display: flex;
+flex-direction: row-reverse;
+justify-content: center;
+align-items: center;
+}
+/* Storlek på maps*/
+footer iframe{
+  width: 60vh;
+  height: 70vh;
+}
+
+footer h2, ol, h1 {
+    color: var(--color--first); 
+  }
+/* Anpassar för mindre skärm*/
+@media (max-width:500px) {
+
+  body{
+    background-color: black;
+  }
+
+header {
+flex-direction: column;
+}
+
+footer{
+flex-direction: column;
+}
+}

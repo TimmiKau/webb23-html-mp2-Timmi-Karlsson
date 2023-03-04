@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*:root {
+  --color--background: rgb(35, 31, 30);
+  --color--first: rgb(211, 185, 101);
+  --color--sec: rgb(239, 22, 27);
+}
+
+.text{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 50%;
+}
+
+p{
+  color: var(--color--first);
+  margin: 20px;
+}
