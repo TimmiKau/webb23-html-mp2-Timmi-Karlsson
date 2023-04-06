@@ -19,8 +19,12 @@ header img {
   height: 100vh;
 }
 
-/* Vet inte vad som har hämt med meny knappen. Den har slutat fungera och det vita strecket har uppstått. Vad har jag gjort för fel? */
-
+#meny{
+  position: absolute;
+  left: 48%;
+  top: 45%;
+  opacity: 100%;
+}
 
 #meny a {
   position: absolute;
@@ -38,13 +42,7 @@ header img {
   transition-delay: 0.5s;
 }
 
-/* Rörelse */
-#meny:active {
-  scale: 90%;
-  opacity: 90%;
-}
-
-#meny a:hover {
+#meny:hover {
   background-color: var(--color--background);
 }
 
@@ -53,10 +51,15 @@ header img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--color--sec);
+  background-color: var(--color--first);
   padding: 20px;
   height: 90vh;
 }
+
+.kontaktfrom:hover{
+background-color: var(--color--sec);
+}
+
 /* Target, allt som är text */
 input[type='text'],
 select,
@@ -71,7 +74,7 @@ textarea {
 }
 /* Target knapp */
 input[type='submit'] {
-  background-color: var(--Main--color);
+  background-color: black;
   color: white;
   padding: 12px 20px;
   border: none;
